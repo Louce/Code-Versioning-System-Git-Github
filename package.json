@@ -1,13 +1,14 @@
 {
   "type": "module",
-  "name": "exercise-2.code-versioning-system-git-github",
+  "name": "exercise-2-code-versioning-system-git-github",
   "version": "1.0.0",
-  "description": "",
-  "main": "utils.js",
+  "description": "A project to practice Git and GitHub workflows with JavaScript modules",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["git", "github", "javascript", "modules"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT"
 }
