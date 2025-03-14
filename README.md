@@ -248,13 +248,13 @@ Project Link: [https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Gi
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
 [contributors-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
 [forks-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/forks
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
 [stars-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
 [issues-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
 [license-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dendyrivaldi/
