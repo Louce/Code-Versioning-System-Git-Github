@@ -1,26 +1,3 @@
-# Exercise-2.Code-Versioning-System-Git-Github
-
-# Exercise 2 Report
-
-## Langkah-langkah Pengerjaan:
-1. **Inisialisasi Repositori**:  
-   - Direktori dibuat dan diinisialisasi dengan Git.  
-   - File awal `index.js` ditambahkan.  
-
-2. **Commit ke `main`**:  
-   - Fungsi `greet` ditambahkan.  
-
-3. **Branch `new-feature`**:  
-   - Ditambahkan utility function `sum` di `utils.js`.  
-   - Modifikasi `index.js` untuk menggunakan fungsi baru.  
-
-4. **Pull Request & Merge**:  
-   - PR dibuat dan di-merge ke `main` setelah review.  
-
-## GitHub Repository:  
-[Link ke Repositori](https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github)
-
-
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
@@ -294,9 +271,9 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Dendi - Rivaldydendy459@.gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github](https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
