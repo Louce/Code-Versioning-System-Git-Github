@@ -28,7 +28,7 @@
     <br />
     <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github">View Demo</a>
     &middot;
-    <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues/new?labels=bug&template=bug-report---.md">Report Issue</a>
+    <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues/new?labels=bug&template=bug-report---.md">Report Issues</a>
   </p>
 </div>
 
