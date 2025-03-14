@@ -221,6 +221,9 @@ See the [open issues](https://github.com/Louce/Exercise-2.Code-Versioning-System
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
+
 <!-- LICENSE -->
 ## License
 
@@ -238,3 +241,22 @@ Dendi - Rivaldydendy459@.gmail.com
 Project Link: [https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github](https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/forks
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/dendyrivaldi/
+[product-screenshot]: images/screenshot.png
+
