@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "exercise-2.code-versioning-system-git-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
