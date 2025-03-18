@@ -1,11 +1,5 @@
 import { sum } from './utils.js';
-
-function greet(name) {
-  if (!name) {
-    name = 'Guest';
-  }
-  return `Hello, ${name}!`;
-}
+import { greet } from './Greet.js';
 
 console.log(greet("World"));
 console.log("Sum:", sum(2, 3));
