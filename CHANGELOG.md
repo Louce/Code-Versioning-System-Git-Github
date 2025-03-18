@@ -7,5 +7,6 @@
 - Fixed typos 
 - Back to top links
 - Added utils.js
+- Added Greet.js
 - Changed table of contents to start collapsed
 - Added checkboxes for major features on roadmap
