@@ -1,14 +1,31 @@
 {
-  "type": "module",
-  "name": "exercise-2-code-versioning-system-git-github",
+  "name": "programming-exercises",
   "version": "1.0.0",
-  "description": "A project to practice Git and GitHub workflows with JavaScript modules",
+  "description": "A collection of programming exercises implemented in JavaScript and TypeScript",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
+    "test": "jest",
+    "build": "tsc",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:ts": "tsc && node dist/index.js",
+    "lint": "eslint src/**/*.{js,ts}"
   },
-  "keywords": ["git", "github", "javascript", "modules"],
-  "author": "Your Name <your.email@example.com>",
-  "license": "MIT"
+  "keywords": [
+    "javascript",
+    "typescript",
+    "exercises"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
 }

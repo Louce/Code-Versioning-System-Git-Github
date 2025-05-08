@@ -1,245 +1,326 @@
+# Programming Exercises
 
-<a id="readme-top"></a>
+This repository contains solutions to common programming tasks implemented in both JavaScript and TypeScript. The code is written in a beginner-friendly way with clear explanations.
 
+## Running the Examples
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+### Quick Start
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Exercise-2.Code-Versioning-System-Git-Github</h3>
-
-  <p align="center">
-    Exercise 2 Report
-    <br />
-    <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github">View Demo</a>
-    &middot;
-    <a href="https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues/new?labels=bug&template=bug-report---.md">Report Issues</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Welcome to Exercise 2 , designed to guide you through the essential steps of working with Git repositories. This exercise aims to provide hands-on experience in initializing a repository, making changes, managing branches, and understanding the workflow used in the industry.
-
-What You'll Learn
-* Initialization of a Repository: Understand the initial setup process for a Git repository .
-* Basic Workflow: Practice the basic workflow of making changes and committing them to the repository.
-* Branch Management: Understand the purpose of branches and how to work with them while following the GitHub flow strategy.
-* Pull Requests: Learn the workflow used in the industry for reviewing code and merging changes.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-# Git & GitHub Workflow Guide
-
-## 1. Create a Local Git Repository and Link to GitHub
-
-### Create a New Directory:
+Run JavaScript examples:
 ```bash
-mkdir exercise2-repo && cd exercise2-repo
+node index.js
 ```
 
-### Initialize Git Repository:
+Run TypeScript examples (compile first, then run):
 ```bash
-git init
+npm run build
+node dist/src/index.js
 ```
 
-### Create `index.js` File:
+## Project Setup
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Build TypeScript files:
+```bash
+npm run build
+```
+
+## Tasks and Solutions
+
+### 1. Temperature Converter
+**Task**: Write a program that takes a temperature in Fahrenheit as input and converts it to Celsius.
+- **Input**: A temperature in Fahrenheit
+- **Output**: The temperature converted to Celsius
+- **Files**: 
+  - `temperatureConverter.js`
+  - `temperatureConverter.ts`
+
 ```javascript
-console.log("Hello, Git!");
-```
-
-### Stage and Commit Changes:
-```bash
-git add . && git commit -m "Initial commit"
-```
-
-### Link to GitHub Repository:
-1. Create a new repository on GitHub (e.g., `exercise2-repo`).
-2. Connect the local repository to GitHub:
-   ```bash
-   git remote add origin https://github.com/[username]/exercise2-repo.git
-   git push -u origin main
-   ```
-
----
-
-## 2. Make Changes, Commit, and Push to `main` Branch
-
-### Update `index.js`:
-```javascript
-function greet(name) {
-  return `Hello, ${name}!`;
+// JavaScript implementation
+function fahrenheitToCelsius(fahrenheit) {
+    // Step 1: Subtract 32 from the Fahrenheit temperature
+    const step1 = fahrenheit - 32;
+    
+    // Step 2: Multiply by 5/9 to get Celsius
+    const celsius = step1 * (5/9);
+    
+    // Return the result
+    return celsius;
 }
-console.log(greet("World"));
+
+// Example usage
+console.log(fahrenheitToCelsius(32)); // Output: 0
 ```
 
-### Stage, Commit, and Push:
-```bash
-git add . && git commit -m "Add greet function"
-git push origin main
+```typescript
+// TypeScript implementation
+function fahrenheitToCelsius(fahrenheit: number): number {
+    // Step 1: Subtract 32 from the Fahrenheit temperature
+    const step1 = fahrenheit - 32;
+    
+    // Step 2: Multiply by 5/9 to get Celsius
+    const celsius = step1 * (5/9);
+    
+    // Return the result
+    return celsius;
+}
+
+// Example usage
+console.log(fahrenheitToCelsius(32)); // Output: 0
 ```
 
----
+### 2. Distance Converter
+**Task**: Write a code to convert centimeter to kilometer or vice versa
+- **Input**: 100000 centimeters
+- **Output**: 1 km
+- **Files**: 
+  - `distanceConverter.js`
+  - `distanceConverter.ts`
 
-## 3. Create a New Branch and Work on It
-
-### Create and Switch to `new-feature` Branch:
-```bash
-git checkout -b new-feature
-```
-
-### Create `utils.js`:
 ```javascript
-export const sum = (a, b) => a + b;
+// JavaScript implementation
+function centimetersToKilometers(centimeters) {
+    // Divide by 100,000 to convert from centimeters to kilometers
+    const kilometers = centimeters / 100000;
+    return kilometers;
+}
+
+function kilometersToCentimeters(kilometers) {
+    // Multiply by 100,000 to convert from kilometers to centimeters
+    const centimeters = kilometers * 100000;
+    return centimeters;
+}
+
+// Example usage
+console.log(centimetersToKilometers(100000)); // Output: 1
+console.log(kilometersToCentimeters(1)); // Output: 100000
 ```
 
-### Update `index.js` to Use `utils.js`:
+```typescript
+// TypeScript implementation
+function centimetersToKilometers(centimeters: number): number {
+    // Divide by 100,000 to convert from centimeters to kilometers
+    const kilometers = centimeters / 100000;
+    return kilometers;
+}
+
+function kilometersToCentimeters(kilometers: number): number {
+    // Multiply by 100,000 to convert from kilometers to centimeters
+    const centimeters = kilometers * 100000;
+    return centimeters;
+}
+
+// Example usage
+console.log(centimetersToKilometers(100000)); // Output: 1
+console.log(kilometersToCentimeters(1)); // Output: 100000
+```
+
+### 3. Even Number Checker
+**Task**: Write a function that takes an integer n as input and returns true if n is odd and false if n is even
+- **Input**: 1000, 1001
+- **Output**: 
+  - 1000 → isEven: true
+  - 1001 → isEven: false
+- **Files**: 
+  - `isEven.js`
+  - `isEven.ts`
+
 ```javascript
-import { sum } from './utils.js';
-console.log("Sum:", sum(2, 3));
+// JavaScript implementation
+function isEven(number) {
+    // Use modulo operator (%) to get the remainder when divided by 2
+    // If remainder is 0, the number is even
+    const remainder = number % 2;
+    const isNumberEven = remainder === 0;
+    
+    return isNumberEven;
+}
+
+// Example usage
+console.log(isEven(1000)); // Output: true
+console.log(isEven(1001)); // Output: false
 ```
 
-### Stage, Commit, and Push the Branch:
-```bash
-git add . && git commit -m "Add utility functions"
-git push -u origin new-feature
+```typescript
+// TypeScript implementation
+function isEven(number: number): boolean {
+    // Use modulo operator (%) to get the remainder when divided by 2
+    // If remainder is 0, the number is even
+    const remainder = number % 2;
+    const isNumberEven = remainder === 0;
+    
+    return isNumberEven;
+}
+
+// Example usage
+console.log(isEven(1000)); // Output: true
+console.log(isEven(1001)); // Output: false
 ```
 
----
+### 4. Remove First Occurrence
+**Task**: Write a code to remove the first occurrence of a given "search string" from a string
+- **Input**: string = "Hello world", search string = "ell"
+- **Output**: "Ho world"
+- **Files**: 
+  - `removeFirstOccurrence.js`
+  - `removeFirstOccurrence.ts`
 
-## 4. Switch Between Branches and Follow GitHub Flow
+```javascript
+// JavaScript implementation
+function removeFirstOccurrence(originalString, textToRemove) {
+    // Step 1: Find the position where the text to remove starts
+    const position = originalString.indexOf(textToRemove);
+    
+    // Step 2: If the text to remove was not found, return the original string
+    if (position === -1) {
+        return originalString;
+    }
+    
+    // Step 3: Get the part of the string before the text to remove
+    const beforePart = originalString.slice(0, position);
+    
+    // Step 4: Get the part of the string after the text to remove
+    const afterPart = originalString.slice(position + textToRemove.length);
+    
+    // Step 5: Combine the parts to get the result
+    const result = beforePart + afterPart;
+    
+    // Return the new string
+    return result;
+}
 
-### Return to `main` Branch:
-```bash
-git checkout main
+// Example usage
+console.log(removeFirstOccurrence("Hello world", "ell")); // Output: "Ho world"
 ```
 
-### Optional: Make Changes in `main` and Return to `new-feature`:
-```bash
-git checkout new-feature
+```typescript
+// TypeScript implementation
+function removeFirstOccurrence(originalString: string, textToRemove: string): string {
+    // Step 1: Find the position where the text to remove starts
+    const position = originalString.indexOf(textToRemove);
+    
+    // Step 2: If the text to remove was not found, return the original string
+    if (position === -1) {
+        return originalString;
+    }
+    
+    // Step 3: Get the part of the string before the text to remove
+    const beforePart = originalString.slice(0, position);
+    
+    // Step 4: Get the part of the string after the text to remove
+    const afterPart = originalString.slice(position + textToRemove.length);
+    
+    // Step 5: Combine the parts to get the result
+    const result = beforePart + afterPart;
+    
+    // Return the new string
+    return result;
+}
+
+// Example usage
+console.log(removeFirstOccurrence("Hello world", "ell")); // Output: "Ho world"
 ```
 
----
+### 5. Palindrome Checker
+**Task**: Write a code to check whether a string is a palindrome or not
+- **Input**: "madam"
+- **Output**: palindrome
+- **Files**: 
+  - `isPalindrome.js`
+  - `isPalindrome.ts`
 
-## 5. Create a Pull Request (PR) and Merge
+```javascript
+// JavaScript implementation
+function isPalindrome(inputString) {
+    // Step 1: Convert to lowercase
+    const lowerCaseString = inputString.toLowerCase();
+    
+    // Step 2: Remove all non-alphanumeric characters (only keep a-z and 0-9)
+    const cleanString = lowerCaseString.replace(/[^a-z0-9]/g, '');
+    
+    // Step 3: Create a reversed version of the clean string
+    // - Split the string into an array of characters
+    // - Reverse the array
+    // - Join the array back into a string
+    const reversedString = cleanString.split('').reverse().join('');
+    
+    // Step 4: Check if the clean string equals its reversed version
+    const isPalindromeResult = (cleanString === reversedString);
+    
+    return isPalindromeResult;
+}
 
-### Push Latest Changes to `new-feature`:
-```bash
-git push origin new-feature
+// Example usage
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
 ```
 
-### Create a PR on GitHub:
-1. Go to the **Pull Requests** tab on GitHub.
-2. Click **New Pull Request**.
-3. Set `new-feature` as the **compare branch** and `main` as the **base branch**.
-4. Add a description and click **Create Pull Request**.
+```typescript
+// TypeScript implementation
+function isPalindrome(inputString: string): boolean {
+    // Step 1: Convert to lowercase
+    const lowerCaseString = inputString.toLowerCase();
+    
+    // Step 2: Remove all non-alphanumeric characters (only keep a-z and 0-9)
+    const cleanString = lowerCaseString.replace(/[^a-z0-9]/g, '');
+    
+    // Step 3: Create a reversed version of the clean string
+    // - Split the string into an array of characters
+    // - Reverse the array
+    // - Join the array back into a string
+    const reversedString = cleanString.split('').reverse().join('');
+    
+    // Step 4: Check if the clean string equals its reversed version
+    const isPalindromeResult = (cleanString === reversedString);
+    
+    return isPalindromeResult;
+}
 
-### Merge the PR:
-1. Review the changes (simulate a review if needed).
-2. Click **Merge Pull Request** to merge `new-feature` into `main`.
-3. Delete the merged branch on GitHub (optional).
+// Example usage
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
+```
 
----
+## File Structure
 
-### Notes:
-- Replace `[username]` with your actual GitHub username.
-- Use `git status` to check your current branch and changes.
-- Always pull the latest changes from `main` before merging to avoid conflicts.
+```
+/
+├── index.js           # JavaScript examples runner
+├── package.json       # Project configuration
+├── tsconfig.json      # TypeScript configuration
+└── src/
+    ├── index.ts       # TypeScript examples runner
+    ├── js/            # JavaScript implementations
+    │   ├── temperatureConverter.js
+    │   ├── distanceConverter.js
+    │   ├── isEven.js
+    │   ├── removeFirstOccurrence.js
+    │   └── isPalindrome.js
+    └── ts/            # TypeScript implementations
+        ├── temperatureConverter.ts
+        ├── distanceConverter.ts
+        ├── isEven.ts
+        ├── removeFirstOccurrence.ts
+        └── isPalindrome.ts
+```
 
+## Beginner-Friendly Code Features
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **Step-by-Step Approach**: Each function breaks down the problem into clear, labeled steps
+- **Descriptive Variable Names**: Variables have meaningful names that describe their purpose
+- **Detailed Comments**: Comments explain what each part of the code does
+- **Consistent Structure**: All functions follow the same clean, organized structure
+- **Explicit Logic**: Complex operations are broken down into simpler steps
 
-<!-- ROADMAP -->
-## Roadmap
+## Clean Code Best Practices
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [x] Feature
-    - [x] Function
-    - [x] Utils.js
-
-See the [open issues](https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Dendi - Rivaldydendy459@.gmail.com
-
-Project Link: [https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github](https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
-[contributors-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
-[forks-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/forks
-[stars-shield]: https://img.shields.io/github/stars/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
-[stars-url]: https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
-[issues-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/issues
-[license-shield]: https://img.shields.io/github/license/Louce/Exercise-2.Code-Versioning-System-Git-Github.svg?style=for-the-badge
-[license-url]:https://github.com/Louce/Exercise-2.Code-Versioning-System-Git-Github/blob/main/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/dendyrivaldi/
-[product-screenshot]: images/screenshot.png
-
+- Each function is in its own file with the same name as the function
+- CamelCase naming convention for functions and variables
+- JSDoc comments for documentation
+- Single responsibility principle: each function does one thing only
+- Pure functions: same input always produces the same output
+- Code is both efficient and readable
